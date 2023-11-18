@@ -44,7 +44,7 @@ header p{
         display: block;
         padding: .83rem 2rem;
         text-align: center;
-        border-bottom: solid, 1px, #f2e29f;
+        border-bottom: solid 1px #f2e29f;
     }
     nav li.active a{
         background-color: #172a3a;
@@ -156,6 +156,31 @@ main a:hover{
     height: auto;
 }
 
+table.abbreviation {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table.abbreviation th {
+    background-color: #b3eefa;
+    color: #172a3a;
+    padding: .5rem 2vw;
+    text-align: left;
+}
+
+table.abbreviation td {
+    color: #172a3a;
+    padding: .4rem 2vw;
+}
+
+table.abbreviation tr:nth-child(odd) {
+    background-color: #f7f7f7;
+}
+
+table.abbreviation tr:hover {
+    background-color: rgba(242,183,5,.2)
+}
+
 figure.wrapped{
     width:30%;
     margin: 0 0 0 2%;
@@ -238,7 +263,6 @@ div.gallery figcaption{
     color: white;
     margin: 1rem 0 0 1vw;
 }
- 
 
 /*footer stuff here*/
 footer{
@@ -251,4 +275,9 @@ footer{
 footer a {
     color: #024873;
     clear: both;
+}
+
+header, nav, main, footer {
+    max-width: 64rem;
+    margin: 0 auto;
 }
